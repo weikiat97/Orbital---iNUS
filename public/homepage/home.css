@@ -1,0 +1,352 @@
+html {
+	height: 100%;
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+    background-color:white;
+}
+
+.top {
+	height: 7.6%;
+    background-color: #01015B;
+}
+
+.links > a {
+    font-weight: bold;
+}
+
+#image {
+    float: left;
+    margin: .5%;
+}
+
+#warning {
+    display: none;
+}
+
+#logout-photo:hover {
+    cursor: pointer;
+}
+
+#logout-photo {
+    position: absolute;
+    float: left;
+    margin-bottom: 20px;
+
+}
+body {
+	margin: 0;
+    height: 100%;
+}
+
+
+.links {
+    width: auto;
+    height: 40px;
+}
+
+.links > div, .indiv-link > a {
+    display: inline-block;
+    width: 14%;
+    text-align: center;
+    padding-top: 12px;
+}
+
+
+
+.indiv-link {
+    text-decoration: none;
+}
+
+.links > div > p:hover, .indiv-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.links > div > p, .indiv-link {
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+/*#greeting {
+    text-align: center;
+    font-size: 30pt;
+}
+
+#greeting:hover {
+    font-style: italic;
+    color: royalblue;
+}*/
+#top {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+#bottom-left {
+    width: 70%;
+    float: left;
+}
+
+#bottom-right {
+    width: 30%;
+    float: left;
+}
+
+
+#countdown-textwrap, #upcoming-linewrap, #bl-linewrap {
+    width: 100%;
+    text-align: center;
+}
+.line {
+    width: 44%;
+    height: 47px;
+    border-bottom: 5px solid orange;
+    position: relative;
+    margin: 10px;
+}
+
+.uline {
+    width: 35%;
+    height: 47px;
+    border-bottom: 5px solid orange;
+    position: relative;
+    margin: 10px;
+}
+
+#countdown-text, .line {
+    display: inline-block;
+}
+
+#upcoming-wraptext, .uline {
+    display: inline-block;
+}
+
+#countdown-text {
+    padding: 2px 0px;
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.days-till {
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px  5px;
+}
+
+.event {
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+}
+
+.indiv-widgets {
+    float: left;
+    padding: 5px 5px;
+    margin: 10px;
+    outline: 3px dotted grey;
+}
+
+#first {
+    background-color: palevioletred;
+
+}
+
+#second {
+    background-color: #123C69 ;
+}
+
+#third {
+    background-color: #374785;
+}
+
+
+#fourth {
+    background-color: #ff8c92;
+}
+
+#fifth {
+    background-color: #c72259;
+}
+
+#sixth {
+    background-color: #e78c36;
+}
+
+#seventh {
+    background-color: #e78c36;
+}
+
+#eighth {
+    background-color: #e78c36;
+}
+
+#ninth {
+    background-color: #e78c36;
+}
+
+#tenth {
+    background-color: #e78c36;
+}
+
+#eleventh {
+    background-color: #e78c36;
+}
+
+#twelve {
+    background-color: #e78c36;
+}
+
+#first-wrap:hover #first-details, #second-wrap:hover #second-details, #third-wrap:hover #third-details, #fourth-wrap:hover #fourth-details, #fifth-wrap:hover #fifth-details, #sixth-wrap:hover #sixth-details,
+#seventh-wrap:hover #seventh-details, #eighth-wrap:hover #eighth-details, #ninth-wrap:hover #ninth-details, #tenth-wrap:hover #tenth-details, #eleventh-wrap:hover #eleventh-details, #twelve-wrap:hover #twelve-details {
+    visibility: visible;
+}
+
+#first-wrap:hover #first, #second-wrap:hover #second, #third-wrap:hover #third, #fourth-wrap:hover #fourth, #fifth-wrap:hover #fifth, #sixth-wrap:hover #sixth,
+#seventh-wrap:hover #seventh, #eight-wrap:hover #eighth, #ninth-wrap:hover #ninth, #tenth-wrap:hover #tenth, #eleventh-wrap:hover #eleventh, #twelve-wrap:hover #twelve {
+    outline: solid;
+}
+
+.overall-wrap {
+    position: relative;
+}
+
+#first-wrap, #second-wrap, #third-wrap, #fourth-wrap, #fifth-wrap, #sixth-wrap, #seventh-wrap, #eighth-wrap, #ninth-wrap, #tenth-wrap, #eleventh-wrap, #twelve-wrap {
+    display: none;
+}
+
+#first-details, #second-details, #third-details, #fourth-details, #fifth-details, #sixth-details, #seventh-details, #eighth-details, #ninth-details, #tenth-details, #eleventh-details, #twelve-details {
+    bottom: 50%;
+    left: 15%;
+    position: absolute;
+}
+
+#first-details, #second-details, #third-details, #fourth-details, #fifth-details, #sixth-details, #seventh-details, #eighth-details, #ninth-details, #tenth-details, #eleventh-details, #twelve-details {
+    position: absolute;
+    background-color: rgb(211, 211, 211, 0.7);
+    padding: .5%;
+    border-style: ridge;
+    border-color: lightgray;
+    text-align: center;
+    visibility: hidden;
+    backface-visibility: 100%;
+}
+
+#first-details > p, #second-details > p, #third-details > p, #fourth-details > p, #fifth-details > p, #sixth-details > p, #seventh-details > p, #eighth-details > p,
+#ninth-details > p, #tenth-details > p, #eleventh-details > p, #twelve-details > p {
+    font-size: 10pt;
+    margin: .5px;
+}
+
+#add-widget {
+    margin: 10px;
+}
+
+#add-widget:hover {
+    cursor: pointer;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.bline {
+    width: 20%;
+    height: 47px;
+    border-bottom: 5px solid orange;
+    position: relative;
+    margin: 10px;
+}
+
+#countdown-text, .bline {
+    display: inline-block;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+	display: none;
+	position: fixed;
+	top: 150px;
+	left: 90px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+  }
+
+  /* Add styles to the form container */
+  .form-popup {
+	max-width: 300px;
+	padding: 10px;
+	background-color: white;
+  }
+
+  /* Full-width input fields */
+  .form-container input[type=text] {
+	width: 90%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+  }
+
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus {
+	background-color: #ddd;
+	outline: none;
+  }
+
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+	background-color: rgb(73, 154, 192);
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom:10px;
+	opacity: 0.8;
+  }
+
+
+#text {
+    text-align: center;
+    font-weight: bold;
+}
+
+.indiv-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#upcoming-left, #upcoming-right, #text {
+    display: inline-block;
+}
+
+#upcoming-header {
+    text-align: center;
+}
+
+#upcoming-left, #upcoming-right {
+    margin: 10px;
+}
+
+
+#IVLE-logo, #luminus-logo, #edurec-logo, #nusmods-logo {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+#ivle-details, #luminus-details, #edurec-details, #nusmods-details {
+    position: absolute;
+    background-color: rgb(211, 211, 211, 0.7);
+    padding: .5%;
+    text-align: center;
+    visibility: hidden;
+    backface-visibility: 100%;
+}
+
+#IVLE-logo:hover #ivle-details, #luminus-logo:hover #luminus-details, #edurec-logo:hover #edurec-details, #nusmods-logo:hover #nusmods-details {
+    visibility: visible;
+}

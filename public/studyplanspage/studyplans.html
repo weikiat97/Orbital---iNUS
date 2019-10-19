@@ -1,0 +1,88 @@
+<html>
+<head>
+  <title>My Modules</title>
+  <link rel="stylesheet" type="text/css" href="studyplans.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header class="top">
+        <div id="image">
+            <!--<img src="iNUS.png" width="150" height="75" />-->
+        </div>
+
+        <div class="links">
+            <div>
+                <a href="../homepage/home.html" class="indiv-link"> HOME </a>
+            </div>
+            <div>
+                <a href="../profilepage/profile.html" class="indiv-link"> PROFILE </a>
+            </div>
+            <div>
+              <a href="../y1s1page/year1sem1.html" class="indiv-link" onclick="doClick(); return false;">MY MODULES</a>
+            </div>
+            <div>
+                <a href="../recordspage/records.html" class="indiv-link"> RECORDS </a>
+            </div>
+            <div>
+                <a href="../degreepage/degree.html" class="indiv-link"> DEGREE REQUIREMENTS </a>
+            </div>
+            <div>
+              <a href="../studyplanspage/studyplans.html" class="indiv-link"> STUDY PLANS </a>
+            </div>
+            <div id=logout-photo>
+                <img src="logout2.png" width="30" height="30"/>
+            </div>
+          </div>
+    </header>
+
+
+    <label class = "upload-group">
+        Upload your study plan here!
+        <input type="file" id="file">
+    </label>
+    <button type="btn btn-primary" id="upload" onclick="uploadFile()">Submit</button>
+
+
+
+  <h3> Choose your choice of degree </h3>
+  <select>
+    <option value="select">Select Here</option>
+    <option value="cs">Computer Science</option>
+    <option value="ba">Business Analytics</option>
+    <option value="ceg">Computer Engineering</option>
+    <option value="is">Information Systems</option>
+  </select>
+  <h3> Choose the plan you wish to see </h3>
+  <select>
+    <option value="select">Select Here</option>
+    <option value="num1">Sally's Plan</option>
+    <option value="num2">Gabriel's Plan</option>
+  </select>
+
+
+      <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
+
+      <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyBHjADdC5stLSoH_prlhzNPuzW6744LNo4",
+          authDomain: "inus-fb3b7.firebaseapp.com",
+          databaseURL: "https://inus-fb3b7.firebaseio.com",
+          projectId: "inus-fb3b7",
+          storageBucket: "inus-fb3b7.appspot.com",
+          messagingSenderId: "1091818833464",
+          appId: "1:1091818833464:web:c1fd906552971e1b"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const storageService = firebase.storage();
+        const storageRef = storageService.ref();
+        const auth = firebase.auth();
+        const db = firebase.database();
+      </script>
+
+      <script src="studyplans.js"></script>
+
+</body>

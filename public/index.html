@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> iNUS </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+    <div id="bulk">
+        <div id="main-image">
+            <img src="nus_utown.jpg" width="100%" height="720">
+        </div>
+    </div>
+    <div id="welcome-words">
+        <p id="welcome-line"> Welcome to iNUS</p>
+    </div>
+    <div id="welcome-details">
+        <p class="welcome-des"> Your one-stop platform for academic-related matters in NUS! </p>
+    </div>
+    <div id="login">
+        <button id="LISU" onclick="openLIForm()"> Login / Sign Up </button>
+    </div>
+
+    <div class="form-popup" id="login-wrap">
+            <h1>Login</h1>
+        <form class="form-container" id="login-form">
+            <input type="text" placeholder="Enter Email Address" name="email" id="login-email" required>
+            <input type="password" placeholder="Enter Password" name="psw" id="login-password" required>
+            <button type="submit" class="btn"> Login </button>
+            <button type="button" class="btn cancel" onclick="closeLIForm()"> Close </button>
+        </form>
+        <a href="#"> Forgot your password? </a><br>
+        <a href="./signuppage/signup.html" > Not a user? Sign up here! </a>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBHjADdC5stLSoH_prlhzNPuzW6744LNo4",
+        authDomain: "inus-fb3b7.firebaseapp.com",
+        databaseURL: "https://inus-fb3b7.firebaseio.com",
+        projectId: "inus-fb3b7",
+        storageBucket: "inus-fb3b7.appspot.com",
+        messagingSenderId: "1091818833464",
+        appId: "1:1091818833464:web:c1fd906552971e1b"
+      };
+      firebase.initializeApp(firebaseConfig);
+
+      const auth = firebase.auth();
+      const db = firebase.database();
+    </script>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

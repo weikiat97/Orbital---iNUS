@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> iNUS </title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="top">
+        <div id="image">
+            <!--<img src="iNUS.png" width="150" height="75" />-->
+        </div>
+
+        <div class="links">
+            <div>
+                <a href="../homepage/home.html" class="indiv-link"> HOME </a>
+            </div>
+            <div>
+                <a href="../profilepage/profile.html" class="indiv-link"> PROFILE </a>
+            </div>
+            <div>
+              <a href="../y1s1page/year1sem1.html" class="indiv-link" onclick="doClick(); return false;">MY MODULES</a>
+            </div>
+            <div>
+                <a href="../recordspage/records.html" class="indiv-link"> RECORDS </a>
+            </div>
+            <div>
+                <a href="../degreepage/degree.html" class="indiv-link"> DEGREE REQUIREMENTS </a>
+            </div>
+            <div>
+              <a href="../studyplanspage/studyplans.html" class="indiv-link"> STUDY PLANS </a>
+            </div>
+            <div id=logout-photo>
+                <img src="logout2.png" width="30" height="30"/>
+            </div>
+          </div>
+
+
+
+    </header>
+
+
+    <!--<div id="greeting">
+        <h4> Welcome Back Lynn! </h4>
+    </div>-->
+
+    <div id="top">
+            <div id="countdown-textwrap">
+                    <div class="line"> </div>
+                    <div id="countdown-text">
+                        <p> Up Next </p>
+                    </div>
+                    <div class="line"> </div>
+                </div>
+
+                <div id="widgets">
+
+                  <div id="first-wrap" class='overall-wrap'>
+                      <div id="first-details">
+                          <p id="1 location-message"> </p>
+                          <p id="1 time-message"> </p>
+                          <p id="1 remarks-message"> </p>
+                      </div>
+                      <div class="indiv-widgets" id="first">
+                          <div class="event">
+                              <p id="1 title-message"></p>
+                          </div>
+                          <div class="days-till" id="1">
+                              <p> </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div id="second-wrap" class='overall-wrap'>
+                      <div id="second-details">
+                          <p id="2 location-message"> </p>
+                          <p id="2 time-message"> </p>
+                          <p id="2 remarks-message"> </p>
+                      </div>
+                      <div class="indiv-widgets" id="second">
+                          <div class="event">
+                              <p id="2 title-message"></p>
+                          </div>
+                          <div class="days-till" id="2">
+                              <p> </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div id="third-wrap" class='overall-wrap'>
+                      <div id="third-details">
+                          <p id="3 location-message"> </p>
+                          <p id="3 time-message"> </p>
+                          <p id="3 remarks-message"> </p>
+                      </div>
+                      <div class="indiv-widgets" id="third">
+                          <div class="event">
+                              <p id="3 title-message"></p>
+                          </div>
+                          <div class="days-till" id="3">
+                              <p> </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div id="fourth-wrap" class='overall-wrap'>
+                      <div id="fourth-details">
+                          <p id="4 location-message"> </p>
+                          <p id="4 time-message"> </p>
+                          <p id="4 remarks-message"> </p>
+                      </div>
+                      <div class="indiv-widgets" id="fourth">
+                          <div class="event">
+                              <p id="4 title-message"></p>
+                          </div>
+                          <div class="days-till" id="4">
+                              <p> </p>
+                          </div>
+                      </div>
+                  </div>
+
+                    <div id="fifth-wrap" class='overall-wrap'>
+                        <div id="fifth-details">
+                            <p id="5 location-message"> </p>
+                            <p id="5 time-message"> </p>
+                            <p id="5 remarks-message"> </p>
+                        </div>
+                        <div class="indiv-widgets" id="fifth">
+                            <div class="event">
+                                <p id="5 title-message"></p>
+                            </div>
+                            <div class="days-till" id="5">
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sixth-wrap" class='overall-wrap'>
+                        <div id="sixth-details">
+                            <p id="6 location-message"> </p>
+                            <p id="6 time-message"> </p>
+                            <p id="6 remarks-message"> </p>
+                        </div>
+                        <div class="indiv-widgets" id="sixth">
+                            <div class="event">
+                                <p id="6 title-message"></p>
+                            </div>
+                            <div class="days-till" id="6">
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="seventh-wrap" class='overall-wrap'>
+                        <div id="seventh-details">
+                            <p id="7 location-message"> </p>
+                            <p id="7 time-message"> </p>
+                            <p id="7 remarks-message"> </p>
+                        </div>
+                        <div class="indiv-widgets" id="seventh">
+                            <div class="event">
+                                <p id="7 title-message"></p>
+                            </div>
+                            <div class="days-till" id="7">
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="eighth-wrap" class='overall-wrap'>
+                        <div id="eighth-details">
+                            <p id="8 location-message"> </p>
+                            <p id="8 time-message"> </p>
+                            <p id="8 remarks-message"> </p>
+                        </div>
+                        <div class="indiv-widgets" id="eight">
+                            <div class="event">
+                                <p id="8 title-message"></p>
+                            </div>
+                            <div class="days-till" id="8">
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ninth-wrap" class='overall-wrap'>
+                        <div id="ninth-details">
+                            <p id="9 location-message"> </p>
+                            <p id="9 time-message"> </p>
+                            <p id="9 remarks-message"> </p>
+                        </div>
+                        <div class="indiv-widgets" id="ninth">
+                            <div class="event">
+                                <p id="9 title-message"></p>
+                            </div>
+                            <div class="days-till" id="9">
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tenth-wrap" class='overall-wrap'>
+                        <div id="tenth-details">
+                            <p id="10 location-message"> </p>
+                            <p id="10 time-message"> </p>
+                            <p id="10 remarks-message"> </p>
+                        </div>
+                        <div class="indiv-widgets" id="tenth">
+                            <div class="event">
+                                <p id="10 title-message"></p>
+                            </div>
+                            <div class="days-till" id="10">
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="eleventh-wrap" class='overall-wrap'>
+                        <div id="eleventh-details">
+                            <p id="11 location-message"> </p>
+                            <p id="11 time-message"> </p>
+                            <p id="11 remarks-message"> </p>
+                        </div>
+                        <div class="indiv-widgets" id="eleventh">
+                            <div class="event">
+                                <p id="11 title-message"></p>
+                            </div>
+                            <div class="days-till" id="11">
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="twelve-wrap" class='overall-wrap'>
+                        <div id="twelve-details">
+                            <p id="12 location-message"> </p>
+                            <p id="12 time-message"> </p>
+                            <p id="12 remarks-message"> </p>
+                        </div>
+                        <div class="indiv-widgets" id="twelve">
+                            <div class="event">
+                                <p id="12 title-message"></p>
+                            </div>
+                            <div class="days-till" id="12">
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="clearfix"> </div>
+                <button id="add-widget" onclick="openEventForm()">
+                    Add Event
+                </button>
+
+    </div>
+
+
+    <div class="form-popup" id="add-wrap">
+        <h2> Add Event </h2>
+    <form class="form-container" id="event-form">
+        <input type="text" id="title" name="title" placeholder="Event">
+            <input type="text" id="date" name="date" placeholder="Event Date (eg. 25 March, 2020)">
+            <input type="text" id="time" name="time" placeholder="Event Time">
+            <input type="text" id="location" name="location" placeholder="Event Location">
+            <input type="text" id="remarks" name="remarks" placeholder="Remarks">
+            <button class="btn"> Submit </button>
+    </form>
+
+    <script>
+      window.onload = function() {
+        makeCountdown();
+      }
+    </script>
+  </div>
+
+  <div class="form-popup" id="remove-wrap">
+          <h2> Remove Event </h2>
+      <form class="form-container" id="remove-form">
+          <input type="text" placeholder="Enter Event" name="removeModule" id="removeModule">
+          <button type="submit" class="btn"> Remove Event </button>
+          <button type="submit" class="btn cancel" onclick="closeForm()"> Close </button>
+      </form>
+  </div>
+
+
+<div id="warning" class="alert alert-warning alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Cannot add more than six countdown widgets!</strong>
+  </div>
+
+    <div id="bottom-left">
+            <div id="upcoming-linewrap">
+                    <div class="uline"> </div>
+                    <div id="countdown-text">
+                        <p> Upcoming Events </p>
+                    </div>
+                    <div class="uline"> </div>
+                </div>
+
+        <div id="upcoming-events-wrapper">
+            <div id="upcoming-header">
+                <button id="upcoming-left" onclick="plusDivs(-1)">
+                    &#10094;
+                </button>
+                <div id="text">
+                    <h3> Events </h3>
+                </div>
+                <button id="upcoming-right" onclick="plusDivs(+1)">
+                    &#10095;
+                </button>
+            </div>
+
+            <div id="upcoming-pictures">
+                <img class="indiv-pic" src="computing_carnival.jpg">
+                <img class="indiv-pic" src="computing_anniversary.png">
+                <img class="indiv-pic" src="computing_funrun.png">
+                <img class="indiv-pic" src="volunteer.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom-right">
+            <div id="bl-linewrap">
+                    <div class="bline"> </div>
+                    <div id="countdown-text">
+                        <p> Useful Links </p>
+                    </div>
+                    <div class="bline"> </div>
+                </div>
+                <div id="useful-links">
+                    <div id=IVLE-logo>
+                        <a href="https://ivle.nus.edu.sg/" class="useful"> <img src="ivlelogo.png" width="120" height="120"/> </a>
+                        <p id="ivle-details"> IVLE </p>
+                    </div>
+                    <div id="luminus-logo">
+                            <a href="https://luminus.nus.edu.sg/" class="useful"> <img src="luminus.png" width="220" height="120"/> </a>
+                            <p id="luminus-details"> LumiNUS </p>
+                    </div>
+                    <div id="edurec-logo">
+                            <a href="https://myedurec.nus.edu.sg/psp/cs90prd/?cmd=login&languageCd=ENG&" class="useful"> <img src="edureclogo.jpg" width="120" height="120"/> </a>
+                            <p id="edurec-details"> EduRec </p>
+                    </div>
+                    <div id="nusmods-logo">
+                            <a href="https://nusmods.com/timetable/sem-1" class="useful"> <img src="nusmods.png" width="220" height="80"/> </a>
+                            <p id="nusmods-details"> NUSmods </p>
+                    </div>
+                 </div>
+
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+
+    <script>
+
+      var firebaseConfig = {
+        apiKey: "AIzaSyBHjADdC5stLSoH_prlhzNPuzW6744LNo4",
+        authDomain: "inus-fb3b7.firebaseapp.com",
+        databaseURL: "https://inus-fb3b7.firebaseio.com",
+        projectId: "inus-fb3b7",
+        storageBucket: "inus-fb3b7.appspot.com",
+        messagingSenderId: "1091818833464",
+        appId: "1:1091818833464:web:c1fd906552971e1b"
+      };
+
+      firebase.initializeApp(firebaseConfig);
+
+      const auth = firebase.auth();
+      const db = firebase.database();
+      const fb = firebase.firestore();
+    </script>
+
+    <script src="home.js"></script>
+</body>
+
+
+
+</html>

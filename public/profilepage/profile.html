@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+        <title> iNUS </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="profile.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header class="top">
+        <div id="image">
+            <!--<img src="iNUS.png" width="150" height="75" />-->
+        </div>
+
+        <div class="links">
+            <div>
+                <a href="../homepage/home.html" class="indiv-link"> HOME </a>
+            </div>
+            <div>
+                <a href="../profilepage/profile.html" class="indiv-link"> PROFILE </a>
+            </div>
+            <div>
+              <a href="../y1s1page/year1sem1.html" class="indiv-link" onclick="doClick(); return false;">MY MODULES</a>
+            </div>
+            <div>
+                <a href="../recordspage/records.html" class="indiv-link"> RECORDS </a>
+            </div>
+            <div>
+                <a href="../degreepage/degree.html" class="indiv-link"> DEGREE REQUIREMENTS </a>
+            </div>
+            <div>
+              <a href="../studyplanspage/studyplans.html" class="indiv-link"> STUDY PLANS </a>
+            </div>
+            <div id=logout-photo>
+                <img src="logout2.png" width="30" height="30"/>
+            </div>
+          </div>
+    </header>
+
+    <div id="container">
+        <div id="sidebar">
+            <div id="left-content">
+
+                    <!--made some changes here-->
+
+                          <div class="row">
+                            <div class="small-12 medium-2 large-2 columns">
+                              <div class="circle">
+                                <!-- User Profile Image -->
+                                <img id="profile-pic" src="data:image/png;base64,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">
+
+                                <!-- Default Image -->
+                                <!-- <i class="fa fa-user fa-5x"></i> -->
+                              </div>
+                              <!--<div class="p-image">
+
+                                <input type="file" class="file-select" accept="image/*"/></input>
+                                 <button class="file-submit">SUBMIT</button>
+                              </div>-->
+                           </div>
+                         </div>
+
+
+         <!--to here-->
+
+         <div id="move">
+              <div id="name">
+                      <h1><p id="name"></p></h1>
+                  </div>
+                  <div id="faculty">
+                    <h3><p id="fac"></p></h3>
+                  </div>
+                  <div id="course">
+                      <h3><p id="courseOfStudy"></p></h3>
+                  </div>
+                  <div id="year2">
+                    <h3><p id="yearOfStudy"></p></h3>
+                  </div>
+          </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!--
+    -->
+        <div id="content">
+            <div id="right-content">
+              <form id="course-form">
+                <h3> Change Course? </h3>
+                  <p><select id= "faculty2">
+                      <option selected = "selected" >Select Faculty</option>
+                      <option value="fass">Arts and Social Sciences</option>
+                      <option value="biz">Business & Accountancy</option>
+                      <option value="comp">Computing</option>
+                      <option value="dentistry">Dentistry</option>
+                      <option value="sde">Design & Environment</option>
+                      <option value="engin">Engineering</option>
+                      <option value="law">Law</option>
+                      <option value="med">Medicine</option>
+                      <option value="music">Music</option>
+                      <option value="nursing">Nursing</option>
+                      <option value="science">Science</option>
+                    </select>
+                  </p>
+
+                  <p><select id="degree">
+                    <option selected = "selected" >Select Course</option></select></p>
+                  <button type="submit" class="btn"> Change Course </button>
+                  <p>
+                    <ol id = "degreeList">
+                  </p>
+              </form><br><br>
+
+              <form id="year-form">
+                <h3> Change Semester of Study? </h3>
+              <p><select id= "year">
+                  <option selected = "selected" >Select Current Year and Semester of Study</option>
+                  <option value="y1s1">Year 1 Semester 1</option>
+                  <option value="y1s2">Year 1 Semester 2</option>
+                  <option value="y2s1">Year 2 Semester 1</option>
+                  <option value="y2s2">Year 2 Semester 2</option>
+                  <option value="y3s1">Year 3 Semester 1</option>
+                  <option value="y3s2">Year 3 Semester 2</option>
+                  <option value="y4s1">Year 4 Semester 1</option>
+                  <option value="y4s2">Year 4 Semester 2</option>
+              </select></p>
+              <button type="submit" class="btn"> Change Semester of Study </button>
+            </p><br>
+
+<!--
+              <h3> Change Email? </h3>
+                <form class="email">
+                  <p> New Email: </p>
+                    <input type="text" name="email" placeholder="New Email" />
+                </form>
+                <button> Update </button>
+
+                <h3> Change Password? </h3>
+                  <form class="password">
+                    <p> Old Password: </p>
+                      <input type="text" name="pw" placeholder="Password" />
+                  </form>
+
+                  <form class="password2">
+                    <p> New Password: </p>
+                      <input type="text" name="pw2" placeholder="Confirm Password" />
+                  </form>
+                  <button> Update </button> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBHjADdC5stLSoH_prlhzNPuzW6744LNo4",
+        authDomain: "inus-fb3b7.firebaseapp.com",
+        databaseURL: "https://inus-fb3b7.firebaseio.com",
+        projectId: "inus-fb3b7",
+        storageBucket: "inus-fb3b7.appspot.com",
+        messagingSenderId: "1091818833464",
+        appId: "1:1091818833464:web:c1fd906552971e1b"
+      };
+      firebase.initializeApp(firebaseConfig);
+      const storageService = firebase.storage();
+      const storageRef = storageService.ref();
+      const auth = firebase.auth();
+      const db = firebase.database();
+    </script>
+
+    <script src="profile.js"></script>
+    <script>putValues()</script>
+
+</body>
+
+</html>

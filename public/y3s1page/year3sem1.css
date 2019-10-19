@@ -1,0 +1,243 @@
+html {
+	height: 100%;
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+    background-color:white;
+}
+
+.top {
+	height: 7.6%;
+    background-color: #01015B;
+}
+
+.links > a {
+    font-weight: bold;
+}
+
+
+#logout-photo:hover {
+    cursor: pointer;
+}
+
+#logout-photo {
+    position: absolute;
+    float: left;
+    margin-bottom: 20px;
+
+}
+body {
+	margin: 0;
+    height: 100%;
+}
+
+
+.links {
+    width: auto;
+    height: 40px;
+}
+
+.links > div, .indiv-link > a {
+    display: inline-block;
+    width: 14%;
+    text-align: center;
+    padding-top: 12px;
+}
+
+
+
+.indiv-link {
+    text-decoration: none;
+}
+
+.links > div > p:hover, .indiv-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.links > div > p, .indiv-link {
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#enter-modules {
+	width: auto;
+	height: 50px;
+	text-align: center;
+	font-size: 20px;
+	position: relative;
+}
+
+#enter-modules > h2 {
+	font-size: 20px;
+}
+ h1 {
+     text-align: center;
+ }
+
+  th, td {
+    padding: 15px;
+
+  }
+
+  th {
+    text-align: left;
+    background-color: orange;
+  }
+
+.align {
+    text-align: center;
+}
+
+#table-wrap {
+	margin: 10px;
+	border-radius: 4px;
+	font-size: 20px;
+}
+
+
+table {
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+table > caption {
+    font-weight: bold;
+    font-size: 16pt;
+    margin: 10px;
+}
+
+td {
+    border-radius: 4px;
+		font-size: 20px;
+text-align: center;
+}
+
+
+#confirm-CAP {
+    margin: 10px;
+    border-radius: 4px;
+}
+
+#confirm-CAP:hover {
+    cursor: pointer;
+
+}
+
+#cap-text, #cap-value {
+    display: inline-block;
+    padding: 0px;
+}
+
+#cap-wrap {
+    position: relative;
+    margin-left: 80px;
+}
+
+#cap-text > p {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.form-popup {
+	display: none;
+	position: fixed;
+	top: 100px;
+	right: 300px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+  }
+
+  /* Add styles to the form container */
+  .form-popup {
+	max-width: 200px;
+	padding: 10px;
+	background-color: white;
+  }
+
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+	width: 90%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+  }
+
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+  }
+
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+	background-color: rgb(73, 154, 192);
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom:10px;
+	opacity: 0.8;
+  }
+
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+	background-color: rgb(212, 38, 38);
+  }
+
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+	opacity: 1;
+  }
+
+  .line {
+    width: 35%;
+    height: 10px;
+    border-bottom: 5px solid orange;
+    position: relative;
+    margin: 10px;
+}
+
+.aline {
+    width: 35%;
+    height: 10px;
+    border-bottom: 5px solid orange;
+    position: relative;
+    margin: 10px;
+}
+
+#outputPredicted, .line {
+    display: inline-block;
+}
+
+#outputActual, .aline {
+    display: inline-block;
+}
+
+#outputPredictedOverall, .line {
+    display: inline-block;
+}
+
+#outputActualOverall, .aline {
+    display: inline-block;
+}
+
+#outputPredicted, #outputActual, #outputPredictedOverall, #outputActualOverall {
+    padding: 2px 0px;
+    font-size: 17pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+#predicted-textwrap, #actual-textwrap {
+    text-align: center;
+    margin: 10px;
+}
+
+#buttons-wrap {
+    margin-top: 20px;
+    margin-left: 90px;
+}

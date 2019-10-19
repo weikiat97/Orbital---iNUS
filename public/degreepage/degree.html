@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> iNUS </title>
+    <link rel="stylesheet" type="text/css" href="degree.css">
+</head>
+
+<body>
+    <header class="top">
+        <div id="image">
+            <!--<img src="iNUS.png" width="150" height="75" />-->
+        </div>
+
+        <div class="links">
+            <div>
+                <a href="../homepage/home.html" class="indiv-link"> HOME </a>
+            </div>
+            <div>
+                <a href="../profilepage/profile.html" class="indiv-link"> PROFILE </a>
+            </div>
+            <div>
+              <a href="../y1s1page/year1sem1.html" class="indiv-link" onclick="doClick(); return false;">MY MODULES</a>
+            </div>
+            <div>
+                <a href="../recordspage/records.html" class="indiv-link"> RECORDS </a>
+            </div>
+            <div>
+                <a href="../degreepage/degree.html" class="indiv-link"> DEGREE REQUIREMENTS </a>
+            </div>
+            <div>
+              <a href="../studyplanspage/studyplans.html" class="indiv-link"> STUDY PLANS </a>
+            </div>
+            <div id=logout-photo>
+                <img src="logout2.png" width="30" height="30"/>
+            </div>
+          </div>
+    </header>
+
+    <div id="table-wrap">
+        <table id="actual-table" style="width:90%">
+            <caption> Degree Requirements </caption>
+            <tr>
+                <th class="modcode" width=20%> Module Code </th>
+                <th> Description </th>
+                <th class="MCs"> MCs/Units</th>
+                <th> Completed? </th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBHjADdC5stLSoH_prlhzNPuzW6744LNo4",
+        authDomain: "inus-fb3b7.firebaseapp.com",
+        databaseURL: "https://inus-fb3b7.firebaseio.com",
+        projectId: "inus-fb3b7",
+        storageBucket: "inus-fb3b7.appspot.com",
+        messagingSenderId: "1091818833464",
+        appId: "1:1091818833464:web:c1fd906552971e1b"
+      };
+      firebase.initializeApp(firebaseConfig);
+
+      const auth = firebase.auth();
+      const db = firebase.database();
+    </script>
+    <script src="degree.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script> setup(); </script>
+
+</body>
+
+
+
+</html>

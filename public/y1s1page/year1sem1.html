@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> iNUS </title>
+    <link rel="stylesheet" type="text/css" href="year1sem1.css">
+</head>
+
+<body>
+
+  <header class="top">
+    <div id="image">
+        <!--<img src="iNUS.png" width="150" height="75" />-->
+    </div>
+
+    <div class="links">
+        <div>
+            <a href="../homepage/home.html" class="indiv-link"> HOME </a>
+        </div>
+        <div>
+            <a href="../profilepage/profile.html" class="indiv-link"> PROFILE </a>
+        </div>
+        <div>
+          <a href="../y1s1page/year1sem1.html" class="indiv-link" onclick="doClick(); return false;">MY MODULES</a>
+        </div>
+        <div>
+            <a href="../recordspage/records.html" class="indiv-link"> RECORDS </a>
+        </div>
+        <div>
+            <a href="../degreepage/degree.html" class="indiv-link"> DEGREE REQUIREMENTS </a>
+        </div>
+        <div>
+          <a href="../studyplanspage/studyplans.html" class="indiv-link"> STUDY PLANS </a>
+        </div>
+        <div id=logout-photo>
+            <img src="logout2.png" width="30" height="30"/>
+        </div>
+      </div>
+</header>
+
+    <h1> Year 1 Semester 1 </h1>
+    <div id = "table-wrap">
+      <table style="width:90%" id="actual-table">
+        <caption> Modules </caption>
+        <tr id="tr">
+          <th>Module Code</th>
+          <th>Description</th>
+          <th>MCs/Units</th>
+          <th>Predicted Grade</th>
+          <th>Actual Grade</th>
+        </tr>
+      </table>
+    </div>
+
+      <div class="form-popup" id="add-wrap">
+              <h3>Add Module</h3>
+          <form class="form-container" id="add-form">
+              <input type="text" placeholder="Enter Module Code" name="addModule" id="addModule">
+              <button type="submit" class="btn"> Add Module </button>
+              <button type="submit" class="btn cancel" onclick="closeForm()"> Close </button>
+          </form>
+      </div>
+
+      <div class="form-popup" id="predicted-wrap">
+              <h3>Change Predicted Module Grades</h3>
+          <form class="form-container" id="predictedGrade-form">
+              <input type="text" placeholder="Enter Module Code" name="predictedModule" id="predictedModule">
+              <select name="grades" id="predictedGrade">
+                <option selected="selected">Enter Grades</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="D+">D</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+                <option value="S">S</option>
+                <option value="U">U</option>
+                <option value="W">W</option>
+              </select>
+              <button type="submit" class="btn"> Change Predicted Grade </button>
+              <button type="submit" class="btn cancel" onclick="closeForm()"> Close </button>
+          </form>
+      </div>
+
+      <div class="form-popup" id="actual-wrap">
+              <h3>Add Actual Module Grades</h3>
+          <form class="form-container" id="actualGrade-form">
+              <input type="text" placeholder="Enter Module Code" name="predictedModule" id="actualModule">
+              <select name="grades" id="actualGrade">
+                <option selected="selected">Enter Grades</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="D+">D</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+                <option value="S">S</option>
+                <option value="U">U</option>
+                <option value="W">W</option>
+                <option value="NIL">NIL</option>
+              </select>
+              <button type="submit" class="btn"> Add Actual Grades </button>
+              <button type="submit" class="btn cancel" onclick="closeForm()"> Close </button>
+          </form>
+      </div>
+
+      <div class="form-popup" id="remove-wrap">
+              <h3>Remove Module</h3>
+          <form class="form-container" id="remove-form">
+              <input type="text" placeholder="Enter Module Code" name="removeModule" id="removeModule">
+              <button type="submit" class="btn"> Remove Module </button>
+              <button type="submit" class="btn cancel" onclick="closeForm()"> Close </button>
+          </form>
+      </div>
+      <div id="buttons-wrap">
+        <button id="login-button" onclick="addModules()"> Add Modules </button>
+      <button id="login-button" onclick="changePredictedGrades()"> Change Predicted Grades </button>
+      <button id="login-button" onclick="addActualGrades()"> Add Actual Grades </button>
+      <button id="login-button" onclick="removeModules()"> Remove Modules </button>
+      </div>
+
+
+    <script>
+      window.onload = function() {
+        calculatePredicted();
+        calculateActual();
+        calculateActualOverall();
+        calculatePredictedOverall();
+      }
+    </script>
+
+<div id="predicted-textwrap">
+  <div class="line"> </div>
+  <h2 id = "outputPredicted"></h2>
+  <div class="line"> </div>
+</div>
+
+<div id="actual-textwrap">
+  <div class="aline"> </div>
+  <h2 id = "outputActual"></h2>
+  <div class="aline"> </div>
+</div>
+
+<div id="predicted-textwrap">
+  <div class="aline"> </div>
+  <h2 id = "outputPredictedOverall"></h2>
+  <div class="aline"> </div>
+</div>
+
+<div id="predicted-textwrap">
+  <div class="aline"> </div>
+  <h2 id = "outputActualOverall"></h2>
+  <div class="aline"> </div>
+</div>
+
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBHjADdC5stLSoH_prlhzNPuzW6744LNo4",
+        authDomain: "inus-fb3b7.firebaseapp.com",
+        databaseURL: "https://inus-fb3b7.firebaseio.com",
+        projectId: "inus-fb3b7",
+        storageBucket: "inus-fb3b7.appspot.com",
+        messagingSenderId: "1091818833464",
+        appId: "1:1091818833464:web:c1fd906552971e1b"
+      };
+      firebase.initializeApp(firebaseConfig);
+
+      const auth = firebase.auth();
+      const db = firebase.database();
+    </script>
+
+    <script src="year1sem1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>makeTable();</script>
+
+</body>
+
+
+
+</html>

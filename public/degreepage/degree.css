@@ -1,0 +1,143 @@
+html {
+	height: 100%;
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+    background-color:white;
+}
+
+.top {
+	height: 7.6%;
+    background-color: #01015B;
+}
+
+.links > a {
+    font-weight: bold;
+}
+
+#actual-table {
+    text-align: center;
+    width: auto;
+}
+
+.modcode {
+    width: 20%
+}
+
+.MCs {
+    width: 10%
+}
+
+#image {
+    float: left;
+    margin: .5%;
+}
+
+#logout-photo:hover {
+    cursor: pointer;
+}
+
+#logout-photo {
+    position: absolute;
+    float: left;
+    margin-bottom: 20px;
+
+}
+body {
+	margin: 0;
+    height: 100%;
+}
+
+
+.links {
+    width: auto;
+    height: 40px;
+}
+
+.links > div, .indiv-link > a {
+    display: inline-block;
+    width: 14%;
+    text-align: center;
+    padding-top: 12px;
+}
+
+
+
+.indiv-link {
+    text-decoration: none;
+}
+
+.links > div > p:hover, .indiv-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.links > div > p, .indiv-link {
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 15px;
+  }
+
+  th {
+    text-align: center;
+    background-color: orange;
+  }
+
+.align {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid black;
+}
+
+table > caption {
+    font-weight: bold;
+    font-size: 16pt;
+    margin: 10px;
+}
+
+td {
+    border-radius: 2px;
+    width: 50%;
+}
+
+#confirm-CAP {
+    margin: 10px;
+    border-radius: 4px;
+}
+
+#confirm-CAP:hover {
+    cursor: pointer;
+
+}
+
+#cap-text, #cap-value {
+    display: inline-block;
+    padding: 0px;
+}
+
+#cap-wrap {
+    position: relative;
+    margin-left: 80px;
+}
+
+#cap-text > p {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+#table-wrap {
+		font-size: 16pt;
+		margin: auto;
+		margin-top: 40px;
+}
+
+#table-wrap > td {
+		border-radius: 2px;
+		width: 50%;
+}
